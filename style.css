@@ -1,0 +1,153 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+:root {
+    font-size: 20px ;
+}
+
+body {
+
+}
+
+.hero {
+    width: 100% ;
+    height: 100vh ;
+    background-color: aqua ;
+    text-align: center ;
+    position: relative ;
+}
+
+.hero h1 {
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+    font-size: 40px ;
+}
+
+.hero p {
+    position: absolute ;
+    top: 80% ;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+    font-size: 20px ;
+}
+
+.container {
+    width: 100vmin ;
+    margin: 10px auto ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+.intro {
+    width: 95% ;
+    margin: 50px auto ;
+    text-align: center ;
+}
+
+.intro h1 {
+    margin: 10px auto ;
+    font-size: 3em ;
+}
+
+.intro p {
+    margin: 10px auto ;
+    font-size: 1rem ;
+}
+
+.em-rem-section {
+    width: 95% ;
+    margin: 50px auto;
+    display: flex ;
+    flex-direction: column ;
+    text-align: center ;
+}
+
+.em {
+    width: 95% ;
+    margin: 30px auto ;
+}
+
+.rem {
+    width: 95% ;
+    margin: 30px auto ;
+}
+
+/* snippet */
+
+.snippet {
+    width: 100% ;
+    display: flex ;
+    flex-direction: column ;
+    background-color: #7242f5 ;
+    margin-top: 40px ;
+}
+
+.selection {
+    margin: 10px auto ;
+    width: 95% ;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-evenly ;
+}
+
+.selection .html {
+    width: 30% ;
+    background-color: #f58142 ;
+    color: #fff ;
+    cursor: pointer;
+    border-radius: 5px ;
+} 
+
+.selection .css {
+    width: 30% ;
+    background-color: #42bcf5 ;
+    color: #fff ;
+    cursor: pointer;
+    border-radius: 5px ;
+} 
+
+.selection .result {
+    width: 30% ;
+    background-color: #42f5c8 ;
+    color: #fff ;
+    cursor: pointer;
+    border-radius: 5px ;
+} 
+
+.code  {
+    width: 80vmin ;
+    height: 50vmin ;
+    margin: 10px auto ;
+    background-color: #252526 ;
+    color: #fff ;
+    overflow-x : hidden ;
+     padding: 20px ;
+}
+
+.code img {
+    margin: auto ;
+    width: 70vmin ;
+}
+
+@media only screen and (max-width : 750px ){
+    .container {
+        width: 90vmin ;
+        margin: 10px auto ;
+        display: flex ;
+        flex-direction: column ;
+    }
+
+    .code  {
+        width: 60vmin ;
+        height: 80vmin ;
+    }
+    
+    .code img {
+        margin: auto ;
+        width: 50vmin ;
+    }
+}

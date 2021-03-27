@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi css unit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>dokumentasi berbagai macam satuan ukuran css unit </h1>
+        <p>em,rem</p>
+    </div>
+    <div class="container">
+        <div class="intro">
+            <h1>Apa itu css unit</h1>
+            <p>css unit adalah sebuah satuan ukuran yang di gunakan dalam css. biasa nya  kita hanya mengetahui px dan %, namun ini beda lagi ini akan lebih kompleks lagi dan juga lebih membuat web jadi lebih mudah untuk responsive.</p>
+        </div>
+        <div class="em-rem-section">
+            <div class="em">
+                <h4>EM</h4>
+                <p>EM adalah satuan unit css yang mengambil dari ukuran font size parent class nya. ukuran 1EM adalah sebesar 1kali ukuran parent class nya dan 2EM berati 2 kali ukuran font parent class nya. bila parent class pertama nya tidak menpunyai ukuran font maka si EM akan terus mengambil hingga ke root. contoh</p>
+                <div class="snippet">
+                    <div class="selection">
+                        <div class="html" id="em" data-toggle = "1">
+                            html
+                        </div>
+                        <div class="css" id="em" data-toggle = "0">
+                            css
+                        </div>
+                        <div class="result" id="em" data-toggle = "2">Hasil</div>
+                    </div>
+                    <div class="code" id="em-render">
+                    </div>
+                </div>
+            </div>
+            <div class="rem">
+                <h4>REM</h4>
+                <p>REM adalah satuan unit css yang mengambil ukuran font size dari html atau gk root dan juga dia tidak mengambil dari parent class nya. sama seperti EM 1 REM sama dengan 1 kali ukuran font size si html dan juga root jika 2REM berati 2 kali nya dan seterus nya.  contoh </p>
+                <div class="snippet">
+                    <div class="selection">
+                        <div class="html" id="rem" data-toggle = "1">
+                            html
+                        </div>
+                        <div class="css" id="rem" data-toggle = "0">
+                            css
+                        </div>
+                        <div class="result" id="rem" data-toggle = "2">Hasil</div>
+                    </div>
+                    <div class="code" id="rem-render">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="snippet.js"></script>
+</body>
+</html>
